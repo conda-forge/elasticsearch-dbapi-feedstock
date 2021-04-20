@@ -22,8 +22,7 @@ requirements:
     - elasticsearch >=7.0.1
     - python >=3.6
     - sqlalchemy
-    # not listed upstream but testing fails without it:
-    - packaging
+    - packaging<21.0
 
 test:
   imports:
