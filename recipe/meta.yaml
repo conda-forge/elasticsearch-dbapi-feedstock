@@ -1,5 +1,5 @@
 {% set name = "elasticsearch-dbapi" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/elasticsearch-dbapi-{{ version }}.tar.gz
-  sha256: 616591425cf72c826d498f4457203a816c193398290d8c002fa229f1f8e5f951
+  sha256: d654656d59de741b33e1b08d63082d310354d6097746b778ba03167eaf877c42
 
 build:
   number: 0
@@ -19,10 +19,10 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - elasticsearch >=7.0.1
+    - elasticsearch >=7
     - python >=3.6
     - sqlalchemy
-    - packaging <21.0
+    - packaging 21.0
 
 test:
   imports:
