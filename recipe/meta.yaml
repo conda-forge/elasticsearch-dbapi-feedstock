@@ -1,5 +1,5 @@
 {% set name = "elasticsearch-dbapi" %}
-{% set version = "0.2.8" %}
+{% set version = "0.2.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/elasticsearch-dbapi-{{ version }}.tar.gz
-  sha256: 809db9a62bab66b83298f6e85b1f2413f78ed27195fc3ba978d6d7e003a0fa93
+  sha256: df24de752e411ba9c294de99725220ea82b32cee81c29204a456752a9564df17
 
 build:
   number: 0
